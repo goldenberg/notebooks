@@ -56,7 +56,7 @@ time (between 10 and 20 minutes) depending on your network connection.
 ### Run the container
 To run the container (after building it), add your Planet API key below and issue the following command from the git repository root directory:
 ```bash
-docker run -it --rm -p 8888:8888 -v $PWD:/home/jovyan/work -e PL_API_KEY='[YOUR-API-KEY]' planet-notebooks
+docker run -i --rm -p 8888:8888 -v $PWD:/home/jovyan/work -e PL_API_KEY='[YOUR-API-KEY]' -t planet-notebooks
 ```
 
 This does several things:  
